@@ -1,0 +1,17 @@
+.uu{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ll{
+    width: 200px;
+    height: 300px;
+    margin: 10px 5px;
+    background-color: #fff;
+    list-style: none;
+    text-align:center;
+}
+.ll img{
+    width: 150px;
+    margin: 5px 25px;
+}

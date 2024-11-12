@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>大学生心理测试网</title>
+<link href="2.css" rel="stylesheet" type="text/css" media="all" />
+
+<!-- <script src="js/jquery.min.js"></script>
+<script src="js/jquery-plugin-slide.js"></script> -->
+  <script >
+ window.onload = function() {
+    var text = document.querySelector(".text");
+    var btn = document.querySelector(".btn");
+     
+    btn.addEventListener("click", function() {
+        var inputValue = text.value; //获取输入的文本
+        if(inputValue == "首页") {
+            window.location.href = "index.html";
+        }
+		
+        else if(inputValue == "资讯") {
+            window.location.href = "meiju.html";
+        }
+		
+		
+        else if(inputValue == "招聘") {
+            window.location.href = "meiwen.html";
+        }
+       else  if(inputValue == "旅游") {
+            window.location.href = "suibi.html";
+        }
+       else  if(inputValue == "论坛") {
+            window.location.href = "zheli.html";
+        }
+
+				
+		
+        else {
+            alert("您所输入的内容不合法！");
+        }
+    }, false);
+};
+ 
+ 
+ </script>
+
+</head>
+<body>
+
+<div id="header">
+
+
+
+
+<div class="ss">
+   <div class="logo">
+    <img src="./img/0020033774797408_b.jpg" width="50"  />
+    </div>
+   
+ <div class="kk"><input type="text" class="text"> 
+ 
+<button type="button" class="btn">搜索</button></div>  
+
+</div>  
+ 
+    <div id="nav">
+     <ul>
+        <li class="active"><a href="index1.html">首页</a></li>
+        <li><a href="index5.html">心里问答</a></li>
+        
+        <li><a href="index.html">登录</a></li>
+		<li><a href="index2.html">注册</a></li>
+        <li><a href="index4.html">人员信息</a></li>
+        <li><a href="index3.html">咨询辅导</a></li>
+     </ul>
+    </div>
+</div>
+
+<div class="ar">	
+    <div id="content">
+	 <div class="iright">
+	  <h3>相关书籍</h3>
+       <dl>
+	    <dt><a href="#"><img src="img/ca.webp"></a></dt>
+	    <dd>大学生人际交往心理学</dd>
+	  </dl>
+	  <dl>
+	    <dt><a href="#"><img src="img/cf.jpg"></a></dt>
+	    <dd>大学生心里危机干预</dd>
+	  </dl>
+	  <dl>
+	    <dt><a href="#"><img src="img/cc.webp"></a></dt>
+	    <dd>大学生心理健康教程</dd>
+	  </dl>
+	  <dl>
+	    <dt><a href="#"><img src="img/cd.webp"></a></dt>
+	    <dd>大学心理健康教育</dd>
+	  </dl>
+	  <dl>
+	    <dt><a href="#"><img src="img/ce.webp"></a></dt>
+	    <dd>青少年心理健康</dd>
+	  </dl>	  
+	 </div>
+	 <div class ='Homeslide' >
+	<div class ='Homeslide_bigwrap'>
+		<div class='Homeslide_hand0'></div>
+		<div class='Homeslide_hand1'></div>
+		<a target='_blank' class='Homeslide_bigpicdiv_mask'>智力正常、认知正确、情感适当</a>
+		<div class='Homeslide_bigpicdiv'>
+			<a href='#' target='_blank'><img src="img/aa.jpg"></a>
+		</div>
+		<div class='Homeslide_detail'>
+			<p>心理健康是指心理的各个方面及活动过程处于一种良好或正常的状态。
+                心理健康的理想状态是保持性格完好、智力正常、认知正确、情感适当、
+                意志合理、态度积极、行为恰当、适应良好的状态。</p>
+			
+		</div>
+	</div>
+	<div class='Homeslide_thumb'>
+		<ul>
+            <li><img src="./img/a.jpg" alt="">xinli</li>
+            <li><img src="./img/b.jpg" alt="">xinli</li>
+            <li><img src="./img/c.jpg" alt="">xinli</li>
+            <li><img src="./img/d.jpg" alt="">xinli</li>
+            <li><img src="./img/e.jpg" alt="">xinli</li>
+            <li><img src="./img/e.jpg" alt="">xinli</li>
+        </ul>
+	</div>
+</div>
+<!-- <script type="text/javascript">
+//data
+//   var home_slide_data = 
+// [{
+//     "title": "5分钟心理小游戏",
+//     "subtitle": "5分钟心理小游戏",
+//     "image": "images\/img12.jpg",
+//     "thumb": "images\/img12.jpg",
+//     "summary": "“《5分钟心理小游戏》该书主要通过心理游戏在娱乐中了解自己，“认识自己、了解自己”，是一个古老而永恒的话题……",
+//     "mark": "0"
+// }, {
+//     "title": "青少年心理健康",
+//     "subtitle": "青少年心理健康",
+//     "image": "images\/img6.jpg",
+//     "thumb": "images\/img6.jpg",
+//     "summary": "《青少年心理健康》是盛秋鹏于2008年1月1日由人民卫生出版社出版的一本图书。该书是全国中等卫生职业教育卫生部“十一五”规划教材选修课，是中等卫生职业教育开设的一门新课程.....",
+//     "mark": "0"
+// }, {
+//     "title": "人际交往心理学",
+//     "subtitle": "人际交往心理学",
+//     "image": "images\/m1.jpg",
+//     "thumb": "images\/m1.jpg",
+//     "summary": "《人际交往心理学》是首都师范大学出版社2003年2月出版的图书，作者是刘晓新和毕爱萍。本书的主要内容是对人们在人际交往中遇到的烦恼和困惑进行指导，以帮助人们构建良好的人际关系....",
+//     "mark": "0"
+// }, {
+//     "title": "5分钟心理小游戏",
+//     "subtitle": "5分钟心理小游戏",
+//     "image": "images\/img12.jpg",
+//     "thumb": "images\/img12.jpg",
+//     "summary": "“《5分钟心理小游戏》该书主要通过心理游戏在娱乐中了解自己，“认识自己、了解自己”，是一个古老而永恒的话题……",
+//     "mark": "0"
+// }, {
+//    "title": "青少年心理健康",
+//     "subtitle": "青少年心理健康",
+//     "image": "images\/img6.jpg",
+//     "thumb": "images\/img6.jpg",
+//     "summary": "《青少年心理健康》是盛秋鹏于2008年1月1日由人民卫生出版社出版的一本图书。该书是全国中等卫生职业教育卫生部“十一五”规划教材选修课，是中等卫生职业教育开设的一门新课程.....",
+//     "mark": "0"
+// }, {
+//     "title": "人际交往心理学",
+//     "subtitle": "人际交往心理学",
+//     "image": "images\/m1.jpg",
+//     "thumb": "images\/m1.jpg",
+//     "summary": "《人际交往心理学》是首都师范大学出版社2003年2月出版的图书，作者是刘晓新和毕爱萍。本书的主要内容是对人们在人际交往中遇到的烦恼和困惑进行指导，以帮助人们构建良好的人际关系....",
+//     "mark": "0"
+// }];
+//   //console.log(home_slide_data);
+// //实例化...................................
+// $('.Homeslide').homeslide(home_slide_data,true,3000);
+</script> -->
+	<div class="wcontent">
+	
+     <div class="jianjie">
+        <h3>什么是大学生心理健康？</h3>
+        <p><img src="img/ab.jpg" width="310" align="left" / style="padding-right:14px;">《大学生心理健康》是心理学术用语。指的是大学生的心理具有青年中期的许多特点，但作为一个特殊群体，大学生又不能完全等同于社会上的青年。心理是否健康一般采用量表测量，其标准不是固定不变的。心理健康标准随着时代变迁、文化背景变化而变化。</p>
+        <p>大学生群体,一个看似轻松,事实上却承担巨大压力的群体,学业、生活、情感、就业多重大山的压迫下,大学生的心理健康已经告急。一个个血淋淋的事实,在不断警示我们,要关注大学生心理健康。2000年,由北师大心理系团总支、学生会倡议,十多所高校响应,并经北京市团委、学联批准,确定每年的5月25日为全国大学生心理健康日,目的是呼吁大学生关注自己的心理健康,并以此掀起社会关注心理健康热潮。</p>
+     </div>
+      
+	 <div class="b-box">
+	    <h3>健康标准描述</h3>
+	    <dl>	
+		<a href="#"><img src="img/ac.jpg" /></a>
+		<dt><a href="#">标准界限</a></dt>
+		<dd class="tz">大学生心理健康与不健康也并无明显界限，而是一个连续化的过程，如将正常比作白色，将不正常比作黑色，那么在白色与黑色之间存在着...</dd>
+		</dl>
+		<dd class="lb"><a href="#">①有适度的安全感，有自尊心，对自我的成就有价值感。</a></dd>
+		<dd class="lb"><a href="#">②适度地自我批评，不过分夸耀自己也不过分苛责自己</a></dd>
+		<dd class="lb"><a href="#">③在日常生活中，具有适度的主动性，不为环境所左右</a></dd>
+		<dd class="lb"><a href="#">④理智，现实，客观，与现实有良好的接触，能容忍生活中挫折的打击，无过度的幻想。</a></dd>
+		<dd class="lb"><a href="#">⑤适度地接受个人的需要，并具有满足此种需要的能力。</a></dd>
+		<dd class="lb"><a href="#">⑥有自知之明，了解自己的动机和目的，能对自己的能力作客观的估计。</a></dd>
+		<dd class="lb"><a href="#">⑦能保持人格的完整与和谐，个人的价值观能适应社会的标准，对自己的工作能集中注意力</a></dd>
+		<dd class="lb"><a href="#">⑧有切合实际的生活目标。</a></dd>	 
+	 </div>
+	 <div class="b-box">
+	    <h3>问题集锦</h3>
+	    <dl>	
+		<a href="#"><img src="img/ad.jpg" /></a>
+		<dt><a href="#">问题集锦</a></dt>
+		<dd class="tz">目前大学生的心理状况让人担忧。近几次心理健康调查结果显示，大学生现已成为心理弱势群体，心理处于不健康或亚健康状态的学生约占五成。</dd>
+		</dl>
+		<dd class="lb"><a href="#">1、智力正常。智力正常是人正常生活最基本的心理条件。</a></dd>
+		<dd class="lb"><a href="#">2、了解自我,悦纳自我。</a></dd>
+		<dd class="lb"><a href="#">3、接受他人,善与他人相处。</a></dd>
+		<dd class="lb"><a href="#">4、热爱生活,乐于参加工作与学习。</a></dd>
+		<dd class="lb"><a href="#">5、能协调与控制情绪,心境良好。</a></dd>
+		<dd class="lb"><a href="#">6、心理行为符合年龄特征。</a></dd>
+		<dd class="lb"><a href="#">7、人格和谐完整。心理健康的人,人格结构包括气质、能力</a></dd>
+		<dd class="lb"><a href="#">8、心理健康的人能够面对现实、接受现实,并能够主动地去适应现实进一步地改造现实,而不是逃避现实。</a></dd>	 
+	 </div>
+	</div>
+	<div class="hot">
+	<h3>影响因素</h3>
+	<ul>
+	<li><img src="img/rr.png" width="30px"/><a href="#">学业期望 </a></li>
+	<li><img src="img/rr.png" width="30px"/><a href="#">环境变迁</a></li>
+	<li><img src="img/rr.png" width="30px"/><a href="#">人际关系</a></li>
+	<li><img src="img/rr.png" width="30px"/><a href="#">自我认知</a></li>
+	<li><img src="img/rr.png" width="30px"/><a href="#">心理冲突</a></li>
+    <li><img src="img/rr.png" width="30px"/><a href="#">生活事件</a></li>
+	<li><img src="img/rr.png" width="30px"/><a href="#">家庭环境</a></li>
+	</ul>
+	</div>
+</div>
+
+<div id="footer">
+<p>
+首页 | 心里问答 | 开始测试 |登录 | 注册 | 人员信息</p>
+ <p>© Copyright 2019 大学生心理测试网</p>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+
